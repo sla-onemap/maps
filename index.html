@@ -1,0 +1,39 @@
+<html>
+				<head>
+					<title>OneMap 2</title>
+					<link rel="stylesheet" href="leaflet.css" />
+					<script src="leaflet.js"></script>
+					<!--This leaflet-providers is modified to include One Map 2.0 maps--> 
+					<script src="leaflet-providers-added-onemap.js"></script>
+				</head>
+				<body>
+					<h1>Singapore Map</h1>
+						<div id='mapdiv' style='height:700px;'></div>
+				</body>
+				<!--
+				Using our maps can be easy as ABC! ;]
+				Enjoy!!!
+
+					-One Map 2.0 Dev
+				-->
+				<script>
+
+					var baseMaps = {
+									"Default": L.tileLayer.provider('OneMap.Default'),
+									"Original": L.tileLayer.provider('OneMap.Original'),
+									"Night": L.tileLayer.provider('OneMap.Night'),
+									"Grey": L.tileLayer.provider('OneMap.Grey')
+								   };
+
+					var center = L.bounds([1.56073, 104.11475], [1.16, 103.502]).getCenter();
+
+					var map = L.map('mapdiv').setView([center.x, center.y],13);
+
+					L.tileLayer.provider('OneMap.Default').addTo(map);
+					
+					L.control.layers(baseMaps).addTo(map);			   
+
+          
+				</script>
+</html>
+		

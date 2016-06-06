@@ -29,4 +29,3 @@ leaflet-providers is contributed by the open source community @ https://github.c
 
 One Map 2.0 Dev Team modified the version for ease of calling. 
 
-# maps
