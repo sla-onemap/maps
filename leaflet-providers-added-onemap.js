@@ -684,13 +684,34 @@ to include our 4 Singapore maps.
 				minZoom: 11,
 				maxZoom: 19,
 				ext: 'png',
+				bounds: [[1.56073, 104.11475], [1.16, 103.502]],
 				variant: 'Default'
 			},
 			variants: {
-				Default: 'Default',
-				Night: 'Night',
-				Original: 'Original',
-				Grey: 'Grey'
+				Default: {
+					options: {
+						variant: 'Default',
+						bounds: [[1.56073, 104.11475], [1.16, 103.502]]
+					}
+				},
+				Night: {
+					options: {
+						variant: 'Night',
+						bounds: [[1.56073, 104.11475], [1.16, 103.502]]
+					}
+				},
+				Original: {
+					options: {
+						variant: 'Original',
+						bounds: [[1.56073, 104.11475], [1.16, 103.502]]
+					}
+				},
+				Grey: {
+					options: {
+						variant: 'Grey',
+						bounds: [[1.56073, 104.11475], [1.16, 103.502]]
+					}
+				}
 			}
 		}
 

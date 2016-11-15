@@ -11,7 +11,7 @@ These are the various calls for four different maps:
 
 									L.tileLayer.provider('OneMap.Default')
 									L.tileLayer.provider('OneMap.Original')
-									L.tileLayer.provider('OneMap.Night'),
+									L.tileLayer.provider('OneMap.Night')
 									L.tileLayer.provider('OneMap.Grey')
 
 ## Motivation
